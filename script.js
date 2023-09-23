@@ -9,9 +9,6 @@ const LIGHTS = {
 const circles = document.querySelectorAll(".circle");
 
 function q0() {
-	for(item in circles){
-		item.classList.remove('active');
-	}
 	q1();
 }
 
@@ -20,7 +17,7 @@ function q1() {
 	circles[LIGHTS.redWalker].classList.remove('active');
 	circles[LIGHTS.red].classList.add('active');
 	circles[LIGHTS.grinWalker].classList.add('active');
-	setTimeout(q2, 10000);
+	setTimeout(q2, 5000);
 }
 
 function q2() {
@@ -34,7 +31,7 @@ function q3() {
 	circles[LIGHTS.red].classList.remove('active');
 	circles[LIGHTS.yellow].classList.remove('active');
 	circles[LIGHTS.grin].classList.add('active');
-	setTimeout(q4, 10000);
+	setTimeout(q4, 5000);
 }
 
 function q4() {
