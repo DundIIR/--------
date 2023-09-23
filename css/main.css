@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(76, 76, 112);
+  }
+
+.container {
+    display: flex;
+    align-items: end;
+}
+
+.traffic-lights  {
+    background-color: rgb(43, 43, 53);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+.pillar {
+    position: absolute;
+    width: 7px;
+    height: 100px;
+    background-color: rgb(43, 43, 53);
+    bottom: -100px;
+}
+
+.pillar::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: rgb(43, 43, 53);
+    bottom: -5px;
+    left: -16.5px;
+}
+
+.car {
+    height: 150px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+.walker {
+    height: 90px;
+    border-radius: 20px;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(68, 67, 67);
+}
+
+.red {
+    background-color: rgb(201, 27, 27);
+    opacity: 0.2;
+}
+
+.yellow {
+    background-color: rgb(212, 159, 25);
+    opacity: 0.2;
+}
+
+.grin {
+    background-color: rgb(51, 163, 37);
+    opacity: 0.2;
+}
+
+.active {
+    opacity: 1;
+    box-shadow: 0 0 10px 5px #9f98655a;
+}
